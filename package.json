@@ -1,0 +1,33 @@
+{
+  "name": "forecastapp",
+  "version": "1.0.0",
+  "description": "A Javascript App to check the time and weather of Location",
+  "main": "dist/weather.umd.js",
+  "module": "dist/weather.es5.js",
+  "typings": "dist/types/weather.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' ",
+    "build": "tsc --module commonjs && typedoc --out docs --target es6 --theme minimal --mode file src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohdbelal-cb/forecastapp.git"
+  },
+  "keywords": [
+    "weather",
+    "forecast",
+    "time",
+    "js",
+    "ts",
+    "node"
+  ],
+  "author": "Mohd Belal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohdbelal-cb/forecastapp/issues"
+  },
+  "homepage": "https://github.com/mohdbelal-cb/forecastapp#readme"
+}
